@@ -87,6 +87,7 @@ form button{
     width: fit-content;
     font-size: 3.5rem;
     display: flex;
+    
     justify-content: center;
     border-radius: 1.6rem;
     cursor: pointer;
@@ -173,5 +174,13 @@ form button{
     cursor: pointer;
 
 }
-
-
+.research{
+    position: relative;
+    margin-left: -6rem;
+    background-color: white;
+    width: fit-content;
+}
+.research:hover{
+    color: rgb(61, 145, 61);
+    cursor: pointer;
+}

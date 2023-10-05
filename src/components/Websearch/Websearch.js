@@ -88,7 +88,9 @@ const Websearch = () => {
     <div className={`web ${isOpen ? 'close' : 'open'}`}>
       <div className='web-icon' onClick={toggleBar}>
         <BsGlobe2 />
+        
       </div>
+      <div className='research'>Research</div>
       <form onSubmit={handleSubmit}>
         <input
           type='text'
