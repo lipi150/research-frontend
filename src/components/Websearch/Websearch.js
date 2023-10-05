@@ -17,6 +17,13 @@ const Websearch = () => {
     setIsOpen(!isOpen);
     console.log(isOpen)
   };
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      // Call your onEnter function here
+      makeRequest();
+      console.log('ENTER KEY IS PRESSED')
+    }
+  };
   useEffect(() => {
     const inputElement = inputRef.current;
 
@@ -32,13 +39,7 @@ const Websearch = () => {
     };
   }, [handleKeyDown]);
 
-  const handleKeyDown = (e) => {
-    if (e.key === 'Enter') {
-      // Call your onEnter function here
-      makeRequest();
-      console.log('ENTER KEY IS PRESSED')
-    }
-  };
+ 
   const apiUrl = 'https://api.gyanibooks.com/search_publication/';
 
   const handleInputChange = (e) => {
