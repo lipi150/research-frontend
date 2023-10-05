@@ -30,7 +30,7 @@ const Websearch = () => {
         inputElement.removeEventListener('keydown', handleKeyDown);
       }
     };
-  }, []);
+  }, [handleKeyDown]);
 
   const handleKeyDown = (e) => {
     if (e.key === 'Enter') {
