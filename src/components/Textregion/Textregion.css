@@ -1,0 +1,51 @@
+.navbar{
+    height: 3rem;
+    box-shadow: -3px 0 10px 0 rgb(200, 194, 194);
+   margin-top: -2rem;
+    
+}
+.navbar h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    margin-left: 1rem;
+}
+.text--area{
+  display: flex;
+  justify-content: center;
+
+}
+.text--area textarea{
+    height: 40rem;
+    width: 60rem;
+    box-shadow: -3px 0 6px 0 rgb(200, 194, 194);
+
+}
+.para{
+    display: flex;
+    justify-content: center;
+    font-size:2rem ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Add this to your CSS stylesheet */
+
+  .textarea-left{
+    margin-right: -27rem;
+    animation: slideOut 1s ease ;
+}
+@keyframes slideOut{
+    from{
+        margin-right:0rem;
+    }
+    to{
+        margin-right: -27rem;
+    }
+}
+
+
+
+
+
+
+
+
+
