@@ -10,6 +10,7 @@ const Websearch = () => {
   const [searchResults, setSearchResults] = useState([]);
   const [isRateLimited, setIsRateLimited] = useState(false);
   const [isOpen, setIsOpen] = useState(true);
+  const [buttonClicked, setButtonClicked] = useState(false);
 
   const inputRef = useRef(null);
 
@@ -76,6 +77,7 @@ const Websearch = () => {
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent the default form submission behavior
     await makeRequest(); // Call the makeRequest function to initiate the API request
+    setButtonClicked(true);
   };
   
 
@@ -128,7 +130,7 @@ const Websearch = () => {
     null
   )    
 }
-{!Array.isArray(searchResults.data) || searchResults.data.length === 0 ? (
+{buttonClicked && !Array.isArray(searchResults.data) ? (
   <li id='no--result'>No results found <span>!</span></li>
 ) : null}
 
